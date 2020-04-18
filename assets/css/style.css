@@ -1,0 +1,213 @@
+/* 動画のレスポンシブ化 */
+.movie-wrap {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.movie-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*スクロール高さ300 開始 */
+.scr300 {
+	overflow: auto;
+	height: 300px;
+	padding: 10px;
+}
+
+/* スクロール高さ150 */
+.scr100 {
+	overflow: auto;
+	height: 100px;
+	padding: 10px;
+}
+
+/* WordPress Popular Posts */
+.wpp-list {
+	counter-reset: ranking;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wpp-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 900;
+	margin: 0;
+	padding: 5px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.wpp-image {
+	width: 60px;
+	height: auto;
+	margin: 0 10px;
+}
+
+.wpp-body {
+	flex: 1;
+	overflow: auto;
+}
+
+.wpp-views {
+	display: inline-block;
+	padding: 1px 5px;
+	border-radius: 4px;
+	background: #e8383d;
+	color: #fff;
+}
+
+.wpp-list li::before {
+	counter-increment: ranking;
+	content: counter(ranking);
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	width: 1.5em;
+	height: 1.5em;
+	color: #fff;
+	line-height: 1.5;
+	font-size: 14px;
+	border-radius: 0 0 5px 0;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.wpp-item:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.wpp-item:last-child {
+	padding-bottom: 0;
+}
+
+.wpp-list li:nth-child(1)::before {
+	background-color: rgba(230, 180, 34, 0.8);
+}
+
+.wpp-list li:nth-child(2)::before {
+	background-color: rgba(192, 192, 192, 0.8);
+}
+
+.wpp-list li:nth-child(3)::before {
+	background-color: rgba(196, 112, 34, 0.8);
+}
+
+/* Search & Filter */
+form.searchandfilter ul,
+form.searchandfilter li,
+form.searchandfilter p {
+	padding: 0;
+	display: block;
+}
+
+form.searchandfilter li {
+	list-style: none;
+	margin-bottom: 1em;
+}
+
+form.searchandfilter {
+	text-align: center;
+}
+
+form.searchandfilter label {
+	display: block;
+}
+
+form.searchandfilter h4 {
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+form.searchandfilter ul > li > ul:not(.children) {
+	margin: 0 auto;
+}
+
+form.searchandfilter input,
+form.searchandfilter select {
+	width: 100%;
+}
+
+/* Favorites */
+ul.no-favorites {
+	flex: 1;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+ul.favorites-list {
+	padding: 10px;
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul.favorites-list .favorites-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 900;
+	margin: 0;
+	padding: 5px 0;
+}
+
+ul.favorites-list .favorites-item:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+ul.favorites-list .favorites-item:last-child {
+	padding-bottom: 0;
+}
+
+.favorites-image {
+	width: 60px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.favorites-title {
+	flex: 1;
+	font-size: 13px;
+}
+
+.favorites-buttons {
+	display: flex;
+	padding-top: 10px;
+	justify-content: space-around;
+}
+
+.favorites-list .favorites-item .favorites-image img {
+	float: none;
+	margin-right: 0;
+}
+
+/* Shortcode Ultimate */
+.su-tabs.su-tabs-style-default {
+	margin: 0;
+}
+
+.su-tabs .su-tabs-pane {
+	padding: 10px;
+}
+
+/* ブログランキング */
+.blog-rankings {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.ranking-item {
+	width: 30%;
+	text-align: center;
+}
