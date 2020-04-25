@@ -30,3 +30,4 @@ require_once 'inc/add-admin-taxonomy-dropdown.php';
 require_once 'inc/customize-favorites-listing-html.php';
 require_once 'inc/dns-prefetch.php';
 require_once 'inc/add-publicize-post-type.php';
+require_once 'inc/insert-video-shortcode.php';
